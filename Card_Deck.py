@@ -19,7 +19,7 @@ def spades_high(card):
     rank_value = FrenchDeck.ranks.index(card.rank)
     return rank_value * len(suit_values) + suit_values[card.suit]
 
-ali = FrenchDeck()
+user_card = FrenchDeck()
 
-for counter,card in enumerate(sorted(ali,key=spades_high)):
+for counter,card in enumerate(sorted(user_card,key=spades_high)):
     print(counter+1,card)
